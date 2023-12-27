@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import ScannerApp from "./components/scanner";
+import Menues from "./components/menues";
+import Footer from "./components/footer";
+import { View } from "react-native";
+import Header from "./components/header";
 
 export default function App() {
+
+  // const { fontsLoaded } = useFonts({
+  //   Montserrat: require('@expo-google-fonts/montserrat/index.js'),
+  // });
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{flex: 1, backgroundColor: "#F4FFFB"}}>
+      <Header />
+      <Menues />
+      <Footer />
+      {/* <ScannerApp /> */}
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

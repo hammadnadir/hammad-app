@@ -1,21 +1,51 @@
 {
   "name": "barcode-app",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/vector-icons": "^13.0.0",
+    "@gorhom/bottom-sheet": "^4.5.1",
+    "@react-native-async-storage/async-storage": "1.18.2",
+    "@reduxjs/toolkit": "^2.0.1",
+    "@types/react": "~18.2.14",
+    "axios": "^1.6.2",
     "expo": "~49.0.15",
+    "expo-av": "~13.4.1",
+    "expo-barcode-scanner": "~12.5.3",
+    "expo-constants": "~14.4.2",
+    "expo-font": "~11.4.0",
+    "expo-linking": "~5.0.2",
+    "expo-notifications": "~0.20.1",
+    "expo-router": "^2.0.0",
+    "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
+    "expo-updates": "~0.18.18",
+    "formik": "^2.4.5",
     "react": "18.2.0",
-    "react-native": "0.72.6"
+    "react-native": "0.72.6",
+    "react-native-gesture-handler": "~2.12.0",
+    "react-native-safe-area-context": "4.6.3",
+    "react-native-screens": "~3.22.0",
+    "react-native-sound": "^0.11.2",
+    "react-native-table-component": "^1.2.2",
+    "react-redux": "^9.0.4",
+    "redux": "^5.0.0",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^3.1.0",
+    "typescript": "^5.1.3",
+    "yup": "^1.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
+  },
+  "resolutions": {
+    "@expo/cli": "xxx"
   },
   "private": true
 }

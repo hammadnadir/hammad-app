@@ -1,11 +1,13 @@
 {
   "expo": {
-    "name": "barcode-app",
-    "slug": "barcode-app",
+    "name": "Biztek Barcode Scanner",
+    "slug": "biztek-barcode-scanner",
+    "scheme": "biztek-barcode-scanner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "description": "This is scanning app for Biotech Packages.",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -21,10 +23,38 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "buildType": "apk",
+      "package": "com.hammadnadir.biztekbarcodescanner"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7442546e-f50c-4ee9-b531-12b86803507e"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/7442546e-f50c-4ee9-b531-12b86803507e"
+    },
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow Hammad Scanner to access camera."
+        }
+      ],
+      [
+        "expo-updates",
+        {
+          "username": "hammadnadir"
+        }
+      ],
+      "expo-router"
+    ]
   }
 }
